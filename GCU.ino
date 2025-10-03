@@ -45,7 +45,7 @@ const bool IMU_chip = GCU_BMI270_BMM150;
 const bool RTC_chip = GCU_FLAG_OFF;
 
 
-const char* host = "insole_left";
+const char* host = "new_insole_left";
 // WiFi Parameters 
 const char* SSID       = "CNLab-IoT";
 const char* password   = "12345678";
@@ -53,7 +53,7 @@ const char* password   = "12345678";
 
 // port Parameters 
 // insole: left:1370 right:1371
-const uint16_t port = 13250;
+const uint16_t port = 13001;
 
 // UDP broadcast
 const char* SeverIP = "255.255.255.255";
@@ -77,16 +77,20 @@ const int  daylightOffset_sec = 0;
 // const int SelectIO[]={19,20,21,35,36};
 
 // left
-const int analogReadIO[]={7,6,5,4,3,2,1};
-const int SelectIO[]={42,41,40,39,37};
+// const int analogReadIO[]={7,6,5,4,3,2,1};
+// const int SelectIO[]={42,41,40,39,37};
+
+// new left glove
+// const int analogReadIO[]={10,9,8,7,6};
+// const int SelectIO[]={40,41,42,45,18};
 
 // direct_right
 // const int analogReadIO[]={45,42,41,40,39,37,36};
 // const int SelectIO[]={1,2,3,4,5};
 
 // direct_left
-// const int analogReadIO[]={1,2,3,4,5,6,7};
-// const int SelectIO[]={45,42,41,40,39};
+const int analogReadIO[]={1,2,3,4,5,6,7};
+const int SelectIO[]={45,42,41,40,39};
 
 
 // // glove
